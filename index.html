@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Yucheng Jin, Ph.D</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<style>
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.award{
+  color: #d72a33;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Courier New", monospace;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bio</a> 
+    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Research Interests</a> 
+    <a href="#publication" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a>
+    <a href="#grants" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Grants</a>
+    <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Teaching</a>
+    <a href="#mentoring" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mentoring</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-light-grey w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-light-grey w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Yucheng Jin</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Bio -->
+  <div class="w3-container" style="margin-top:80px" id="bio">
+
+  <h1 class="w3-xlarge w3-text-dark-grey"><b>Yucheng Jin 金昱成</b></h1>
+
+
+        <div class="w3-row">
+          <div class="w3-margin-top w3-col m3 l2">
+
+            <img src="./img/me.jpeg" class="w3-round w3-margin-bottom" alt="portrait" style="width:100%">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+              aria-label="Google Scholar" role="img"
+              viewBox="0 0 512 512" width="12%" height="12%">
+              <a href="https://scholar.google.com/citations?user=b0KitdcAAAAJ&hl=en", target="_blank">
+              <rect width="512" height="512" rx="15%" fill="#4285f4"/>
+                <path fill="#fff" d="M213 111l-107 94h69c5 45 41 64 78 67-7 18-4 27 7 39-43 1-103 26-103 67 4 45 63 54 92 54 38 1 81-19 90-54 4-35-10-54-31-71-23-18-28-28-21-40 15-17 35-27 39-51 2-17-2-28-6-43l45-38-1 16c-3 2-5 6-5 9v103c2 13 22 11 23 0V160c0-3-2-7-5-8v-25l16-16zm58 141c-61 10-87-87-38-99 56-11 83 86 38 99zm-5 73c60 13 61 63 10 78-44 9-82-4-81-30 0-25 35-48 71-48z"/>
+              </a>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="12%" height="12%" viewBox="0 0 24 24">
+              <a href="https://dblp.org/pid/121/4445.html", target="_blank">
+                <polygon fill="#2E7FCA" points="11.969 7.81 11.353 5.53 11.353 5.53 11.969 7.81"/><path fill="#2E7FCA" d="M5.754 10.365c-.164-.098-.284-.256-.333-.441L4.814 7.645 2.898 8.543C2.576 8.694 2.409 9.053 2.5 9.396l2.44 9.151c.118.441.605.669 1.019.476l6.073-2.833-.67-2.48L5.754 10.365zM11.353 5.53l-.151-.558c-.05-.183-.168-.34-.331-.438L3.386.049C3.127-.106 2.811.132 2.889.423l1.925 7.221 5.519-2.588C10.746 4.864 11.234 5.09 11.353 5.53z"/><path fill="#0A4DA5" d="M5.754,10.365l5.606,3.345l-1.187-4.392c-0.093-0.344,0.075-0.705,0.398-0.856l1.397-0.652L11.353,5.53c-0.119-0.44-0.606-0.666-1.019-0.473L4.814,7.645l0.608,2.279C5.471,10.108,5.59,10.267,5.754,10.365z"/><polygon fill="#2E7FCA" points="12.031 16.19 12.647 18.47 12.647 18.47 12.031 16.19"/><path fill="#FDD700" d="M21.5,14.604l-2.44-9.151c-0.118-0.441-0.605-0.669-1.019-0.476L11.969,7.81l0.67,2.48l5.606,3.345c0.164,0.098,0.284,0.256,0.333,0.441l0.608,2.279l1.917-0.899C21.424,15.306,21.591,14.947,21.5,14.604z"/><polygon fill="#2E7FCA" points="11.361 13.71 11.361 13.71 12.031 16.19 12.031 16.19"/><polygon fill="#2E7FCA" points="12.639 10.29 12.639 10.29 11.969 7.81 11.969 7.81"/><path fill="#45681B" d="M11.569,9.652l1.07,0.638l-0.67-2.48l-1.397,0.652c-0.323,0.151-0.491,0.512-0.398,0.856l1.187,4.392l0,0l-0.875-3.237C10.314,9.836,11.003,9.314,11.569,9.652z"/><path fill="#FDD700" d="M12.647,18.47l0.151,0.558c0.05,0.183,0.168,0.34,0.331,0.438l7.485,4.485c0.259,0.155,0.575-0.083,0.497-0.375l-1.925-7.221l-5.519,2.588C13.254,19.136,12.766,18.91,12.647,18.47z"/><path fill="#F9BC00" d="M18.246,13.635l-5.606-3.345l1.187,4.392c0.093,0.344-0.075,0.705-0.398,0.856l-1.397,0.652l0.616,2.281c0.119,0.44,0.606,0.666,1.019,0.473l5.519-2.588l-0.608-2.279C18.529,13.892,18.41,13.733,18.246,13.635z"/><path fill="#5A7F19" d="M13.514,13.527c0.172,0.636-0.518,1.159-1.084,0.821l-1.07-0.638l0.67,2.48l1.397-0.652c0.323-0.151,0.491-0.512,0.398-0.856l-1.187-4.392l0,0L13.514,13.527z"/><path fill="#2B5A20" d="M13.514,13.527l-0.875-3.237l-1.07-0.638c-0.566-0.338-1.256,0.185-1.084,0.821l0.875,3.237l1.07,0.638C12.997,14.686,13.686,14.164,13.514,13.527z"/>
+              </a>
+            </svg>
+
+            <svg width="12%" height="12%" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+              <a href="https://orcid.org/0000-0002-3926-7277", target="_blank">
+                <circle cx="512" cy="512" r="512" style="fill:#a6ce39"/>
+                <path d="M373.7 709.3h-50.4V358.5h50.4v350.8zm74-350.8h136.2c129.7 0 186.7 92.7 186.7 175.5 0 90.1-70.4 175.5-186 175.5H447.7v-351zm50.4 305.6h80.2c114.3 0 140.5-86.8 140.5-130 0-70.4-44.9-130-143.1-130h-77.6v260zM381.6 285.5c0 18-14.7 33.1-33.1 33.1-18.3 0-33.1-15.1-33.1-33.1 0-18.3 14.7-33.1 33.1-33.1 18.3 0 33.1 15.1 33.1 33.1z" style="fill:#fff"/>
+              </a>
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="12%" height="12%" viewBox="0 0 128 128">
+            <a href="https://github.com/jindarren", target="_blank">
+              <g fill="#181616"><path fill-rule="evenodd" d="M64 1.512c-23.493 0-42.545 19.047-42.545 42.545 0 18.797 12.19 34.745 29.095 40.37 2.126.394 2.907-.923 2.907-2.047 0-1.014-.04-4.366-.058-7.92-11.837 2.573-14.334-5.02-14.334-5.02-1.935-4.918-4.724-6.226-4.724-6.226-3.86-2.64.29-2.586.29-2.586 4.273.3 6.523 4.385 6.523 4.385 3.794 6.504 9.953 4.623 12.38 3.536.383-2.75 1.485-4.628 2.702-5.69-9.45-1.075-19.384-4.724-19.384-21.026 0-4.645 1.662-8.44 4.384-11.42-.442-1.072-1.898-5.4.412-11.26 0 0 3.572-1.142 11.7 4.363 3.395-.943 7.035-1.416 10.65-1.432 3.616.017 7.258.49 10.658 1.432 8.12-5.504 11.688-4.362 11.688-4.362 2.316 5.86.86 10.187.418 11.26 2.728 2.978 4.378 6.774 4.378 11.42 0 16.34-9.953 19.938-19.427 20.99 1.526 1.32 2.886 3.91 2.886 7.88 0 5.692-.048 10.273-.048 11.674 0 1.13.766 2.458 2.922 2.04 16.896-5.632 29.07-21.574 29.07-40.365C106.545 20.56 87.497 1.512 64 1.512z" clip-rule="evenodd"/><path d="M37.57 62.596c-.095.212-.428.275-.73.13-.31-.14-.482-.427-.382-.64.09-.216.424-.277.733-.132.31.14.486.43.38.642zm-.524-.388M39.293 64.52c-.203.187-.6.1-.87-.198-.278-.297-.33-.694-.124-.884.208-.188.593-.1.87.197.28.3.335.693.123.884zm-.406-.437M40.97 66.968c-.26.182-.687.012-.95-.367-.262-.377-.262-.83.005-1.013.264-.182.684-.018.95.357.262.385.262.84-.005 1.024zm0 0M43.268 69.336c-.233.257-.73.188-1.093-.163-.372-.343-.475-.83-.242-1.087.237-.257.736-.185 1.102.163.37.342.482.83.233 1.086zm0 0M46.44 70.71c-.104.334-.582.485-1.064.344-.482-.146-.796-.536-.7-.872.1-.336.582-.493 1.067-.342.48.144.795.53.696.87zm0 0M49.92 70.965c.013.35-.396.642-.902.648-.508.012-.92-.272-.926-.618 0-.354.4-.642.908-.65.506-.01.92.272.92.62zm0 0M53.16 70.414c.06.342-.29.694-.793.787-.494.092-.95-.12-1.014-.46-.06-.35.297-.7.79-.792.503-.088.953.118 1.017.466zm0 0"/></g>
+              <path fill="#100E0F" d="M24.855 108.302h-10.7a.5.5 0 0 0-.5.5v5.232a.5.5 0 0 0 .5.5h4.173v6.5s-.937.32-3.53.32c-3.056 0-7.327-1.116-7.327-10.508 0-9.393 4.448-10.63 8.624-10.63 3.614 0 5.17.636 6.162.943.31.094.6-.216.6-.492l1.193-5.055a.468.468 0 0 0-.192-.39c-.403-.288-2.857-1.66-9.058-1.66-7.144 0-14.472 3.038-14.472 17.65 0 14.61 8.39 16.787 15.46 16.787 5.854 0 9.405-2.502 9.405-2.502.146-.08.162-.285.162-.38v-16.316a.5.5 0 0 0-.5-.5zM79.506 94.81H73.48a.5.5 0 0 0-.498.503l.002 11.644h-9.392V95.313a.5.5 0 0 0-.497-.503H57.07a.5.5 0 0 0-.498.503v31.53c0 .277.224.503.498.503h6.025a.5.5 0 0 0 .497-.504v-13.486h9.392l-.016 13.486c0 .278.224.504.5.504h6.038a.5.5 0 0 0 .497-.504v-31.53c0-.278-.22-.502-.497-.502zM32.34 95.527c-2.144 0-3.884 1.753-3.884 3.923 0 2.167 1.74 3.925 3.884 3.925 2.146 0 3.885-1.758 3.885-3.925 0-2.17-1.74-3.923-3.885-3.923zM35.296 105.135H29.29c-.276 0-.522.284-.522.56v20.852c0 .613.382.795.876.795h5.41c.595 0 .74-.292.74-.805v-6.346-14.553a.5.5 0 0 0-.498-.502zM102.902 105.182h-5.98a.5.5 0 0 0-.496.504v15.46s-1.52 1.11-3.675 1.11-2.727-.977-2.727-3.088v-13.482a.5.5 0 0 0-.497-.504h-6.068a.502.502 0 0 0-.498.504v14.502c0 6.27 3.495 7.804 8.302 7.804 3.944 0 7.124-2.18 7.124-2.18s.15 1.15.22 1.285c.07.136.247.273.44.273l3.86-.017a.502.502 0 0 0 .5-.504l-.003-21.166a.504.504 0 0 0-.5-.502zM119.244 104.474c-3.396 0-5.706 1.515-5.706 1.515V95.312a.5.5 0 0 0-.497-.503H107a.5.5 0 0 0-.5.503v31.53a.5.5 0 0 0 .5.503h4.192c.19 0 .332-.097.437-.268.103-.17.254-1.454.254-1.454s2.47 2.34 7.148 2.34c5.49 0 8.64-2.784 8.64-12.502s-5.03-10.988-8.428-10.988zm-2.36 17.764c-2.073-.063-3.48-1.004-3.48-1.004v-9.985s1.388-.85 3.09-1.004c2.153-.193 4.228.458 4.228 5.594 0 5.417-.935 6.486-3.837 6.398zM53.195 122.12c-.263 0-.937.107-1.63.107-2.22 0-2.973-1.032-2.973-2.368v-8.866h4.52a.5.5 0 0 0 .5-.504v-4.856a.5.5 0 0 0-.5-.502h-4.52l-.007-5.97c0-.227-.116-.34-.378-.34h-6.16c-.238 0-.367.106-.367.335v6.17s-3.087.745-3.295.805a.5.5 0 0 0-.36.48v3.877a.5.5 0 0 0 .497.503h3.158v9.328c0 6.93 4.86 7.61 8.14 7.61 1.497 0 3.29-.48 3.586-.59.18-.067.283-.252.283-.453l.004-4.265a.51.51 0 0 0-.5-.502z"/>
+            </a>
+          </svg>
+
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" width="12%" height="12%" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+            <a href="https://twitter.com/yucheng_gold", target="_blank">
+              <g>
+                <rect x="0" y="0" style="fill:#50ABF1;" width="455.731" height="455.731"/>
+                <path style="fill:#FFFFFF;" d="M60.377,337.822c30.33,19.236,66.308,30.368,104.875,30.368c108.349,0,196.18-87.841,196.18-196.18
+                  c0-2.705-0.057-5.39-0.161-8.067c3.919-3.084,28.157-22.511,34.098-35c0,0-19.683,8.18-38.947,10.107
+                  c-0.038,0-0.085,0.009-0.123,0.009c0,0,0.038-0.019,0.104-0.066c1.775-1.186,26.591-18.079,29.951-38.207
+                  c0,0-13.922,7.431-33.415,13.932c-3.227,1.072-6.605,2.126-10.088,3.103c-12.565-13.41-30.425-21.78-50.25-21.78
+                  c-38.027,0-68.841,30.805-68.841,68.803c0,5.362,0.617,10.581,1.784,15.592c-5.314-0.218-86.237-4.755-141.289-71.423
+                  c0,0-32.902,44.917,19.607,91.105c0,0-15.962-0.636-29.733-8.864c0,0-5.058,54.416,54.407,68.329c0,0-11.701,4.432-30.368,1.272
+                  c0,0,10.439,43.968,63.271,48.077c0,0-41.777,37.74-101.081,28.885L60.377,337.822z"/>
+              </g>
+            </a>
+          </svg>
+
+
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 382 382" width="12%" height="12%" style="enable-background:new 0 0 382 382;" xml:space="preserve">
+            <a href="https://hk.linkedin.com/in/yucheng-j-4047a828", target="_blank">
+              <path style="fill:#0077B7;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
+                C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
+                H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806
+                c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1
+                s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73
+                c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079
+                c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426
+                c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
+                L341.91,330.654L341.91,330.654z"/>
+            </a>
+          </svg>
+
+          <img src="./img/email.png" class="w3-round" alt="portrait" style="width:80%">
+
+          
+
+
+          </div>
+          <div class="w3-col m9 l10">
+            <p class="w3-margin">
+              Dr. Yucheng Jin is a Research Assistant Professor affiliated with the <a href="https://www.comp.hkbu.edu.hk/~lichen/?page_id=147" target="_blank">HCI-RecSys Group</a> led by <a href="https://www.comp.hkbu.edu.hk/~lichen/" target="_blank">Dr. Li Chen</a> at Hong Kong Baptist University (HKBU). Before joining HKBU, he was a senior UX designer at Lenovo Research. He obtained his Ph.D. degree under the supervision of <a href="https://wms.cs.kuleuven.be/cs/onderzoek/augment/katrien-verbert" target="_blank">Dr. Katrien Verbert</a> and <a href="http://navatintarev.com/" target="_blank"> Dr. Nava Tintarev</a> from the <a href="https://wms.cs.kuleuven.be/cs/onderzoek/augment" target="_blank">HCI Augment Group</a> at the University of Leuven (KU Leuven). He holds a master's degree in computer science from the Technical University of Munich (TUM) and a bachelor's degree in information management from Wuhan University. He has published more than 20 papers in the leading conferences and journals of Human-Computer Interaction and Artificial Intelligence (e.g., CHI, CSCW, IUI, RecSys, CIKM, UMUAI) held more than ten patents granted in China and the US. He regularly serves as the program committee member for ACM RecSys and ACM IUI conferences.
+            </p>
+          </div>
+        </div>
+
+  </div>
+  
+
+  <!-- Research interests -->
+  <div class="w3-container" id="research" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-text-dark-grey"><b>Research Interests</b></h1>
+      <div class="w3-row">
+      <div class="w3-col m5 l5">
+        <img src="./img/research_scope.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m7 l7">
+        <p class="w3-margin">
+           His research is situated in the long-standing quest to "<a href="https://www.dougengelbart.org/content/view/138/" target="_blank">Augmenting human intellect</a>". He does research at the intersection of Human-Computer Interaction and Artificial Intelligence with a focus on applications in health, wellbeing, augmented creativity, and music.
+
+           Currently, he is researching the following topics
+          <ul>
+            <li>Human-AI interaction</li>
+            <li>User experience of recommender systems (e.g., trust, explanation, personalization, and user control)</li>
+            <li>Music and augmented creativity</li>
+            <li>Human health and wellbeing</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Publications -->
+  <div class="w3-container" id="publication" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-text-dark-grey"><b>Selected Publications</b></h1>
+  
+    <div class="w3-row">
+      <div class="w3-col m6 l6">
+        <p><span class="w3-tag w3-tiny w3-blue">HAI</span> Human-AI interaction</p>
+        <p><span class="w3-tag w3-tiny w3-pink">MAC</span> Music and augmented creativity</p>
+      </div>
+
+      <div class="w3-col m6 l6">
+        <p><span class="w3-tag w3-tiny w3-orange">UER</span> User experience of recommender systems</p>
+        <p><span class="w3-tag w3-tiny w3-light-green">HHW</span> Human health and wellbeing</p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/chi22.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        Cai, W., <b>Jin, Y.</b>, & Chen, L. (2022, May). Impacts of Personal Characteristics on User Trust in Conversational Recommender Systems. In <i>CHI Conference on Human Factors in Computing Systems (CHI '22)</i> (pp. 1-14).
+        <a href="./file/chi22.pdf" target="_blank">PDF</a>
+        <a href="https://doi.org/10.1145/3491102.3517471" target="_blank">DOI</a>
+
+        <span class="award">[Honorable Mention Award]</span>
+        <p><span class="w3-tag w3-tiny w3-blue">HAI</span> <span class="w3-tag w3-tiny w3-orange">UER</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/thms.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        Cai, W., <b>Jin, Y.</b>, & Chen, L. (2022). Task-Oriented User Evaluation on Critiquing-Based Recommendation Chatbots. <i>IEEE Transactions on Human-Machine Systems</i>. (pp. 1-13).
+        <a href="https://doi.org/10.1109/THMS.2021.3131674" target="_blank">DOI</a>
+
+        <p><span class="w3-tag w3-tiny w3-blue">HAI</span> <span class="w3-tag w3-tiny w3-orange">UER</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/cscw22.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        Alvarado Rodriguez, O. L., Htun, N. N., <b>Jin, Y.</b>, & Verbert, K. (2022). A systematic review of interaction design strategies for group recommendation systems. <i>Proceedings of the ACM on Human-Computer Interaction (CSCW '22)</i>.  (pp. 1-51) 
+        <a href="https://lirias.kuleuven.be/retrieve/646824" target="_blank">PDF (preprint)</a>
+
+        <p><span class="w3-tag w3-tiny w3-blue">HAI</span> <span class="w3-tag w3-tiny w3-orange">UER</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/hai21.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        <b>Jin, Y.</b>, Chen, L., Cai, W., & Pu, P. (2021, November). Key Qualities of Conversational Recommender Systems: From Users’ Perspective. In <i>Proceedings of the 9th International Conference on Human-Agent Interaction (HAI '21)</i> (pp. 93-102).
+        <a href="./file/hai21.pdf" target="_blank">PDF</a>
+        <a href="https://doi.org/10.1145/3472307.3484164" target="_blank">DOI</a>
+
+        <p><span class="w3-tag w3-tiny w3-orange">UER</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/hci21.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        Shen, Z., Wan, X., <b>Jin, Y.</b>, Gao, G., Wang, Q., & Liu, W. (2021, July). SeatPlus: A Smart Health Chair Supporting Active Sitting Posture Correction. In <i>International Conference on Human-Computer Interaction</i> (pp. 531-547). Springer, Cham.
+        <a href="./file/hci21.pdf" target="_blank">PDF</a>
+        <a href="https://doi.org/10.1007/978-3-030-78224-5_37" target="_blank">DOI</a>
+
+        <p><span class="w3-tag w3-tiny w3-light-green">HHW</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/music_bot_2.0.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        Cai, W., <b>Jin, Y.</b>, & Chen, L. (2021, April). Critiquing for music exploration in conversational recommender systems. In <i>26th International Conference on Intelligent User Interfaces (IUI '21)</i> (pp. 480-490).
+        <a href="./file/iui21.pdf" target="_blank">PDF</a>
+        <a href="https://doi.org/10.1145/3397481.3450657" target="_blank">DOI</a>
+
+        <p><span class="w3-tag w3-tiny w3-blue">HAI</span> <span class="w3-tag w3-tiny w3-pink">MAC</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/oyaya.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        <b>Jin, Y.</b>, Deng, Y., Gong, J., Wan, X., Gao, G., & Wang, Q. (2021, April). OYaYa: A Desktop Robot Enabling Multimodal Interaction with Emotions. In <i>26th International Conference on Intelligent User Interfaces-Companion (IUI companion '21)</i> (pp. 55-57).
+        <a href="./file/iui21_demo.pdf" target="_blank">PDF</a>
+        <a href="https://doi.org/10.1145/3397482.3450729" target="_blank">ODI</a>
+        <p><span class="w3-tag w3-tiny w3-blue">HAI</span> <span class="w3-tag w3-tiny w3-light-green">HHW</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/umuai.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        <b>Jin, Y.</b>, Tintarev, N., Htun, N. N., & Verbert, K. (2020). Effects of personal characteristics in control-oriented user interfaces for music recommender systems. <i>User Modeling and User-Adapted Interaction (UMUAI)</i>, 30(2), 199-249.
+        <a href="./file/umuai.pdf" target="_blank">PDF</a>
+        <a href="https://doi.org/10.1007/s11257-019-09247-2" target="_blank">DOI</a>
+
+        <p><span class="w3-tag w3-tiny w3-blue">HAI</span> <span class="w3-tag w3-tiny w3-pink">MAC</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/music_bot_1.0.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        <b>Jin, Y.</b>, Cai, W., Chen, L., Htun, N. N., & Verbert, K. (2019, November). MusicBot: Evaluating critiquing-based music recommenders with conversational interaction. In <i>Proceedings of the 28th ACM International Conference on Information and Knowledge Management (CIKM '19)</i> (pp. 951-960).
+        <a href="./file/cikm19.pdf" target="_blank">PDF</a>
+        <a href="https://doi.org/10.1145/3357384.3357923" target="_blank">DOI</a>
+
+        <p><span class="w3-tag w3-tiny w3-blue">HAI</span> <span class="w3-tag w3-tiny w3-pink">MAC</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/umap19.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        <b>Jin, Y.</b>, Htun, N. N., Tintarev, N., & Verbert, K. (2019, June). Contextplay: Evaluating user control for context-aware music recommendation. In <i>Proceedings of the 27th ACM Conference on User Modeling, Adaptation and Personalization (UMAP '19)</i> (pp. 294-302).
+        <a href="./file/umap19.pdf" target="_blank">PDF</a>
+        <a href="https://doi.org/10.1145/3320435.3320445" target="_blank">DOI</a>
+
+        <p><span class="w3-tag w3-tiny w3-blue">HAI</span> <span class="w3-tag w3-tiny w3-pink">MAC</span> <span class="w3-tag w3-tiny w3-orange">UER</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/recsys18.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        <b>Jin, Y.</b>, Tintarev, N., & Verbert, K. (2018, September). Effects of personal characteristics on music recommender systems with different levels of controllability. In <i>Proceedings of the 12th ACM Conference on Recommender Systems (RecSys '18)</i> (pp. 13-21).
+        <a href="./file/recsys18.pdf" target="_blank">PDF</a>
+        <a href="https://doi.org/10.1145/3240323.3240358" target="_blank">DOI</a>
+
+        <span class="award">[Best Paper Nominee]</span>
+        <p><span class="w3-tag w3-tiny w3-blue">HAI</span> <span class="w3-tag w3-tiny w3-pink">MAC</span> <span class="w3-tag w3-tiny w3-orange">UER</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/umap18_1.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        Millecamp, M., Htun, N. N., <b>Jin, Y.</b>, & Verbert, K. (2018, July). Controlling spotify recommendations: effects of personal characteristics on music recommender user interfaces. In <i>Proceedings of the 26th Conference on user modeling, adaptation and personalization (UMAP '18)</i> (pp. 101-109).
+        <a href="./file/umap18_1.pdf" target="_blank">PDF</a>
+        <a href="https://doi.org/10.1145/3209219.3209223" target="_blank">DOI</a>
+
+        <p><span class="w3-tag w3-tiny w3-blue">HAI</span> <span class="w3-tag w3-tiny w3-pink">MAC</span> <span class="w3-tag w3-tiny w3-orange">UER</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/umap18_2.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        <b>Jin, Y.</b>, Tintarev, N., & Verbert, K. (2018, July). Effects of individual traits on diversity-aware music recommender user interfaces. In <i>Proceedings of the 26th Conference on User Modeling, Adaptation and Personalization (UMAP '18)</i> (pp. 291-299).
+        <a href="./file/umap18_2.pdf" target="_blank">PDF</a>
+        <a href="https://doi.org/10.1145/3209219.3209225" target="_blank">DOI</a>
+
+        <p><span class="w3-tag w3-tiny w3-pink">MAC</span> <span class="w3-tag w3-tiny w3-orange">UER</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/avi16.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        <b>Jin, Y.</b>, Seipp, K., Duval, E., & Verbert, K. (2016, June). Go with the flow: effects of transparency and user control on targeted advertising using flow charts. In <i>Proceedings of the international working conference on advanced visual interfaces (AVI '16)</i> (pp. 68-75).
+        <a href="./file/avi16.pdf" target="_blank">PDF</a>
+        <a href="http://dx.doi.org/10.1145/2909132.2909269" target="_blank">DOI</a>
+        <p><span class="w3-tag w3-tiny w3-orange">UER</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/eics16.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        <b>Jin, Y.</b>, Klerkx, J., & Verbert, K. (2016, June). CircleBuy: a visual search based second screen application of buying products in videos. In <i>Proceedings of the 8th ACM SIGCHI Symposium on Engineering Interactive Computing Systems (EICS '16)</i> (pp. 287-292).
+        <a href="./file/eics16.pdf" target="_blank">PDF</a>
+        <a href="http://dx.doi.org/10.1145/2933242.2935871" target="_blank">DOI</a>
+        <p><span class="w3-tag w3-tiny w3-blue">HAI</span></p>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/models16.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        Prehofer, C., Wagner, A., & <b>Jin, Y.</b> (2016, October). A model-based approach for multi-device user interactions. In <i>Proceedings of the ACM/IEEE 19th International Conference on Model Driven Engineering Languages and Systems (MODELS '16)</i> (pp. 13-23).
+        <a href="./file/models16.pdf" target="_blank">PDF</a>
+        <a href="http://dx.doi.org/10.1145/2976767.2976776" target="_blank">DOI</a>
+      </div>
+    </div>
+
+    <div class="w3-border-bottom"></div>
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col m4 l4 w3-padding">
+        <img src="./img/ami12.png" class="w3-round" alt="portrait" style="width:100%">
+      </div>
+      <div class="w3-col m8 l8">
+        Bongartz, S., <b>Jin, Y.</b>, Paternò, F., Rett, J., Santoro, C., & Spano, L. D. (2012, November). Adaptive user interfaces for smart environments with the support of model-based languages. In <i>International Joint Conference on Ambient Intelligence (AmI '12)</i> (pp. 33-48). Springer, Berlin, Heidelberg.
+        <a href="./file/ami12.pdf" target="_blank">PDF</a>
+        <a href="https://doi.org/10.1007/978-3-642-34898-3_3" target="_blank">DOI</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Grants -->
+  <div class="w3-container" id="grants" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-text-dark-grey"><b>Grants</b></h1>
+  
+    <ul>
+      <li>HKBU Start-up Grant, 100,000 HKD, 2021</li>
+      <li>HKBU Service learning mini-grant, 30,000 HKD, 2021</li>
+      <li>Mainland-Hong Kong University Alliances Fund, 20,000 HKD, 2021</li>
+    </ul>
+
+  </div>
+
+  <!-- Teaching -->
+  <div class="w3-container" id="teaching" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-text-dark-grey"><b>Teaching</b></h1>
+  
+    <h5>Winter semester 22/23</h5>
+    <ul>
+      <li>COMP 4045 - Human-Computer Interaction, with Dr. Li Chen</li>
+      <li>COMP 7990 - Principles and Practices of Data Analytics, with Dr. Lu Zhang and Dr. Kevin Wang</li>
+    </ul>
+    
+    <h5>Winter semester 21/22</h5>
+    <ul>
+      <li>COMP 4045 - Human-Computer Interaction, with integrating <a href="https://www.hkbu.edu.hk/en/whats-new/campus-digest/2022/0225-service-learning-course-improves-technology-use-among-older-people.html" target="_blank">service learing</a> into the course.</li>
+      <li>COMP 7990 - Principles and Practices of Data Analytics, with Dr. Lu Zhang and Dr. Kevin Wang</li>
+    </ul>
+
+    
+
+  </div>
+
+  <!-- Mentoring -->
+  <div class="w3-container" id="mentoring" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-text-dark-grey"><b>Mentoring</b></h1>
+      <h5>MPhil/PhD</h5>
+      <ul>
+        <li>Wanling Cai (HKBU, PhD), 04/21 - now, with Dr. Li Chen</li>
+        <li>Xianglin Zhao (HKBU, MPhil), 10/21 - now, with Dr. Li Chen</li>
+      </ul>
+    <h5>Theses</h5>
+      <ul>
+        <li>Danqing Liu (Ludwig-Maximilians-Universität München (LMU), Bachelor thesis), 01/15 - 06/15</li>
+        <li>Raphael Haase (TUM, Master thesis), 12/14 - 04/15</li>
+      </ul>
+    <h5>Internship</h5>
+      <ul>
+        <li>Minzhu Zhao (HKBU) 12/21 - now</li>
+        <li>Zhiwei Wang (Beijing Institute of Technology) 03/20 - 03/21, Lenovo Research</li>
+        <li>Tiffany Ong (Stanford University), 06/19 - 08/19, Lenovo Research</li>
+        <li>Yiyun Zhai (The University of Melbourne), 01/19 - 03/19, Lenovo Research</li>
+        <li>Yuchen Jiang (Stanford University), 06/18 - 08/18, Lenovo Research</li>
+        <li>Christina Gibbs (Stanford University), 06/17 - 08/17, Lenovo Research</li>
+        <li>Xiaozhong Liu (The University of Melbourne), 01/17 - 03/17, Lenovo Research</li>
+      </ul>
+  </div>
+
+
+  <div class="w3-container w3-margin">
+    <a title="free world map tracker" target="_blank" href="https://smallcounter.com/vmap/1651502967/">
+    <img title="free world map counter" src="https://smallcounter.com/map/view.php?type=180&id=1651502967" border="1" alt="world map hits counter"/></a>
+    <br>
+    <img src="https://smallcounter.com/count.php?c_style=123&id=1651504479" border=0 alt="web counter">
+  </div>
+
+
+
+<!-- End page content -->
+</div>
+
+
+
+<!-- W3.CSS Container -->
+<div class="w3-blue w3-container w3-padding-8" style="margin-top:20px;padding-right:58px"><p class="w3-right">Updated in May 2022, Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+</body>
+</html>
