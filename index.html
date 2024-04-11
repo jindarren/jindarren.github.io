@@ -27,22 +27,6 @@ body, h1, h2, h3, h4, h5, h6 {
 
 <body>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-2020-classic-blue w3-top w3-large w3-padding" style="z-index:3;width:250px;font-weight:bold;" id="mySidebar"><br>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bio</a> 
-    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Research Interests</a> 
-    <a href="#publication" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a>
-    <a href="#grants" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Grants</a>
-    <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Teaching</a>
-    <a href="#mentoring" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mentoring</a>
-  </div>
-
-  <div class="w3-display-bottommiddle">
-    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=tt&d=xv6h53IDvK_0xrlzio1tFXK6igor_k4P3L2V5MQi5ZQ&co=34568b&cmo=91ef9a&cmn=017c01'></script>
-  </div>
-</nav>
-
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-light-grey w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-light-grey w3-margin-right" onclick="w3_open()">☰</a>
@@ -507,6 +491,21 @@ body, h1, h2, h3, h4, h5, h6 {
     <div class="w3-margin-right w3-opacity">Updated in Feb 2024, Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 </div>
 
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-2020-classic-blue w3-top w3-large w3-padding" style="z-index:3;width:250px;font-weight:bold;" id="mySidebar"><br>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bio</a>
+    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Research Interests</a>
+    <a href="#publication" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a>
+    <a href="#grants" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Grants</a>
+    <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Teaching</a>
+    <a href="#mentoring" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mentoring</a>
+  </div>
+
+  <div class="w3-display-bottommiddle">
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=tt&d=xv6h53IDvK_0xrlzio1tFXK6igor_k4P3L2V5MQi5ZQ&co=34568b&cmo=91ef9a&cmn=017c01'></script>
+  </div>
+</nav>
 
 <script>
 // Script to open and close sidebar
@@ -519,7 +518,6 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
-
 </script>
 </body>
 </html>
